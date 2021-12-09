@@ -1,2 +1,2 @@
-# tarea_1
-Aquí se realizara el deber 1
+# Tarea_1
+Aquí se realizará el deber 1
