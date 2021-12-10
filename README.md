@@ -10,21 +10,27 @@ como primer paso se localizar[a la carpeta de interes, en este caso " Saavedra20
 Nos ubicamos en 'Guit bash' y acontinuacion localizamos la carpeta con los comandos:
 
 Dell@DellG7Andres MINGW64 ~
+
 $ cd documents
 
 Dell@DellG7Andres MINGW64 ~/documents
+
 $ cd practica\ bio/
 
 Dell@DellG7Andres MINGW64 ~/documents/practica bio
+
 $ cd CSB-master
 
 Dell@DellG7Andres MINGW64 ~/documents/practica bio/CSB-master
+
 $ cd unix/
 
 Dell@DellG7Andres MINGW64 ~/documents/practica bio/CSB-master/unix
+
 $ cd data/
 
 Dell@DellG7Andres MINGW64 ~/documents/practica bio/CSB-master/unix/data
+
 $ ls
 Buzzard2015_about.txt    Gesquiere2011_data.csv  Pacifici2013_about.txt  Saavedra2013_about.txt
 Buzzard2015_data.csv     Marra2014_about.txt     Pacifici2013_data.csv   miRNA/
@@ -33,10 +39,12 @@ Gesquiere2011_about.txt  Marra2014_data.fasta    Saavedra2013/
 Observamos que es aqui donde se encuentra la carpeta, ingresamos en ella:
 
 Dell@DellG7Andres MINGW64 ~/documents/practica bio/CSB-master/unix/data
+
 $ cd Saavedra2013
 
 Apreciamos su contenido:
 Dell@DellG7Andres MINGW64 ~/documents/practica bio/CSB-master/unix/data/Saavedra2013
+
 $ ls
 n1.txt   n14.txt  n19.txt  n23.txt  n28.txt  n32.txt  n37.txt  n41.txt  n46.txt  n50.txt  n55.txt  n6.txt
 n10.txt  n15.txt  n2.txt   n24.txt  n29.txt  n33.txt  n38.txt  n42.txt  n47.txt  n51.txt  n56.txt  n7.txt
@@ -47,12 +55,15 @@ n13.txt  n18.txt  n22.txt  n27.txt  n31.txt  n36.txt  n40.txt  n45.txt  n5.txt  
 Luego seleccionamos uno de los documentos, en este caso se seleccionara 'n33.txt'  y contamos el numero de filas con el siguiente comando:
 
 Dell@DellG7Andres MINGW64 ~/documents/practica bio/CSB-master/unix/data/Saavedra2013
+
 $ wc -l n33.txt
 
 a lo que obtemos '70 n33.txt' 
 
 Ahora contaremos el numero de columnas del documento seleccionado con el comando:
 Dell@DellG7Andres MINGW64 ~/documents/practica bio/CSB-master/unix/data/Saavedra2013
+
 $ head -n 1 n33.txt | tr -d '  '  | tr -d ' \ n '|wc -c
+
  Notese que tenemos en cuenta de eliminar los espacios para no tener errores de conteo de espacios en blanco
  el sesultado es: '21'
