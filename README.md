@@ -11,27 +11,28 @@ Nos ubicamos en 'Guit bash' y acontinuacion localizamos la carpeta con los coman
 
 Dell@DellG7Andres MINGW64 ~
 
-$ cd documents
+$ cd documents <-comando
 
 Dell@DellG7Andres MINGW64 ~/documents
 
-$ cd practica\ bio/
+$ cd practica\ bio/ <-comando
 
 Dell@DellG7Andres MINGW64 ~/documents/practica bio
 
-$ cd CSB-master
+$ cd CSB-master <-comando
 
 Dell@DellG7Andres MINGW64 ~/documents/practica bio/CSB-master
 
-$ cd unix/
+$ cd unix/ <-comando
 
 Dell@DellG7Andres MINGW64 ~/documents/practica bio/CSB-master/unix
 
-$ cd data/
+$ cd data/ <-comando
 
 Dell@DellG7Andres MINGW64 ~/documents/practica bio/CSB-master/unix/data
 
-$ ls
+$ ls<-comando
+
 Buzzard2015_about.txt    Gesquiere2011_data.csv  Pacifici2013_about.txt  Saavedra2013_about.txt
 Buzzard2015_data.csv     Marra2014_about.txt     Pacifici2013_data.csv   miRNA/
 Gesquiere2011_about.txt  Marra2014_data.fasta    Saavedra2013/
@@ -40,12 +41,13 @@ Observamos que es aqui donde se encuentra la carpeta, ingresamos en ella:
 
 Dell@DellG7Andres MINGW64 ~/documents/practica bio/CSB-master/unix/data
 
-$ cd Saavedra2013
+$ cd Saavedra2013 <-comando
 
 Apreciamos su contenido:
 Dell@DellG7Andres MINGW64 ~/documents/practica bio/CSB-master/unix/data/Saavedra2013
 
-$ ls
+$ ls <-comando
+ 
 n1.txt   n14.txt  n19.txt  n23.txt  n28.txt  n32.txt  n37.txt  n41.txt  n46.txt  n50.txt  n55.txt  n6.txt
 n10.txt  n15.txt  n2.txt   n24.txt  n29.txt  n33.txt  n38.txt  n42.txt  n47.txt  n51.txt  n56.txt  n7.txt
 n11.txt  n16.txt  n20.txt  n25.txt  n3.txt   n34.txt  n39.txt  n43.txt  n48.txt  n52.txt  n57.txt  n8.txt
@@ -56,14 +58,14 @@ Luego seleccionamos uno de los documentos, en este caso se seleccionara 'n33.txt
 
 Dell@DellG7Andres MINGW64 ~/documents/practica bio/CSB-master/unix/data/Saavedra2013
 
-$ wc -l n33.txt
+$ wc -l n33.txt <-comando
 
 a lo que obtemos '70 n33.txt' 
 
 Ahora contaremos el numero de columnas del documento seleccionado con el comando:
 Dell@DellG7Andres MINGW64 ~/documents/practica bio/CSB-master/unix/data/Saavedra2013
 
-$ head -n 1 n33.txt | tr -d '  '  | tr -d ' \ n '|wc -c
+$ head -n 1 n33.txt | tr -d '  '  | tr -d ' \ n '|wc -c <-comando
 
  Notese que tenemos en cuenta de eliminar los espacios para no tener errores de conteo de espacios en blanco
  el sesultado es: '21'
