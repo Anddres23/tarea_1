@@ -70,6 +70,9 @@ $ head -n 1 n33.txt | tr -d '  '  | tr -d ' \ n '|wc -c <-comando
  Notese que tenemos en cuenta de eliminar los espacios para no tener errores de conteo de espacios en blanco
  el sesultado es: '21'
  
+ 
+ 
+ 
 ### Segundo ejercicio
 
 2. Escriba un guión que imprima el número de filas y columnas para cada red:
